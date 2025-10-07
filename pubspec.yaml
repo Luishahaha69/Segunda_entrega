@@ -7,21 +7,15 @@ environment:
 
 dependencies:
   flutter:
-  assets:
-    - assets/images/
     sdk: flutter
+  cupertino_icons: ^1.0.2
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
 flutter:
-  assets:
-    - assets/images/
   uses-material-design: true
   assets:
-    - assets/coffee_bg.jpg
-
-flutter:
-  assets:
     - assets/images/
+    - assets/coffee_bg.jpg

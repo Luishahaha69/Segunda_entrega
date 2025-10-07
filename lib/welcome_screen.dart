@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 class WelcomeScreen extends StatelessWidget {
@@ -16,25 +15,36 @@ class WelcomeScreen extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Spacer(flex: 3),
-                  Text(
+                  const Spacer(flex: 3),
+                  const Text(
                     'Fall in Love with\nCoffee in Blissful\nDelight!',
-                    style: TextStyle(color: Colors.white, fontSize: 32, fontWeight: FontWeight.bold),
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 32,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
-                  SizedBox(height: 12),
-                  Text('Welcome to our cozy coffee corner, where every cup is a delightful for you.',
+                  const SizedBox(height: 12),
+                  const Text(
+                    'Welcome to our cozy coffee corner, where every cup is a delightful for you.',
                     style: TextStyle(color: Colors.white70, fontSize: 14),
                   ),
-                  Spacer(flex: 4),
+                  const Spacer(flex: 4),
                   SizedBox(
                     width: double.infinity,
                     child: ElevatedButton(
-                      onPressed: () => Navigator.pushReplacementNamed(context, '/home'),
-                      child: Text('Get Started', style: TextStyle(fontSize: 16)),
+                      onPressed: () =>
+                          Navigator.pushReplacementNamed(context, '/home'),
                       style: ElevatedButton.styleFrom(
-                        primary: Color(0xFFD59263),
-                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-                        padding: EdgeInsets.symmetric(vertical: 14),
+                        backgroundColor: const Color(0xFFD59263), // 👈 cambio aquí
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        padding: const EdgeInsets.symmetric(vertical: 14),
+                      ),
+                      child: const Text(
+                        'Get Started',
+                        style: TextStyle(fontSize: 16),
                       ),
                     ),
                   ),
