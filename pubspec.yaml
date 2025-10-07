@@ -1,0 +1,27 @@
+name: proyectojajaluis_final
+description: A Flutter coffee shop app (Welcome Screen)
+publish_to: 'none'
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+
+dependencies:
+  flutter:
+  assets:
+    - assets/images/
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  assets:
+    - assets/images/
+  uses-material-design: true
+  assets:
+    - assets/coffee_bg.jpg
+
+flutter:
+  assets:
+    - assets/images/
